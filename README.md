@@ -29,39 +29,39 @@ I implemented CSV-driven dialogue, choices and command execution, inventory, per
 
 Implemented and extended the dialogue node executor, including choices, conditions, flags and system-command handling. CSV loading separates authored dialogue from execution, while DialogueUI handles typing, portraits and choices.
 
-[DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [My change f2bade0](https://github.com/YSL-RyuDo/Cylinder-1/commit/f2bade0f41e38fe1d6b07cd38d9aff677152782d), [DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs), [My change 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
+[DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [My change f2bade0](https://github.com/YSL-RyuDo/CylinderGame/commit/f2bade0f41e38fe1d6b07cd38d9aff677152782d), [DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs), [My change 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
 
 ### Inventory and registered items
 
 Worked on item definitions, acquisition, removal, registration and use, along with inventory UI. A registered item can be consumed by a world interaction such as unlocking a portal, connecting the menu state to progression.
 
-[InventoryManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Item/InventoryManager.cs), [My change 6ed8ded](https://github.com/YSL-RyuDo/Cylinder-1/commit/6ed8ded8f321ed7da22453f874316442aa2da7d3), [InventoryUI.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/InventoryUI.cs), [My change b21ce48](https://github.com/YSL-RyuDo/Cylinder-1/commit/b21ce4867f5cff4459ed22a8f97ef87d1c70e54c)
+[InventoryManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Item/InventoryManager.cs), [My change 6ed8ded](https://github.com/YSL-RyuDo/CylinderGame/commit/6ed8ded8f321ed7da22453f874316442aa2da7d3), [InventoryUI.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/InventoryUI.cs), [My change b21ce48](https://github.com/YSL-RyuDo/CylinderGame/commit/b21ce4867f5cff4459ed22a8f97ef87d1c70e54c)
 
 ### Portals, fade and camera transitions
 
 Implemented portal transfer with fade and player warp, item-based locking and a readiness guard against immediate transfer back. Worked on camera follow and external-control transitions so a room or puzzle can temporarily control the view.
 
-[PortalTrigger.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Portal/PortalTrigger.cs), [My change 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [CameraFollow.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Map/CameraFollow.cs), [My change b5e01aa](https://github.com/YSL-RyuDo/Cylinder-1/commit/b5e01aa3498a702fa05e44b18782b3c70da0042a)
+[PortalTrigger.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Portal/PortalTrigger.cs), [My change 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [CameraFollow.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Map/CameraFollow.cs), [My change b5e01aa](https://github.com/YSL-RyuDo/CylinderGame/commit/b5e01aa3498a702fa05e44b18782b3c70da0042a)
 
 ### Interaction and modal UI
 
 Worked on player interaction and on-screen prompts, and implemented the IUIWindow-based menu controller. Menu opening pauses gameplay time; closing returns control. Personality selection, monologue and narration each have their own presentation rather than being folded into one dialogue label.
 
-[UIManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/UIManager.cs), [My change 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PersonalityUI.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/PersonalityUI/PersonalityUI.cs), [My change 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PlayerInteraction.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Player/PlayerInteraction.cs), [My change 1cb584e](https://github.com/YSL-RyuDo/Cylinder-1/commit/1cb584e0032c653a1c14e1166f76505ddf6ae5f4)
+[UIManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/UIManager.cs), [My change 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PersonalityUI.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/PersonalityUI/PersonalityUI.cs), [My change 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PlayerInteraction.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Player/PlayerInteraction.cs), [My change 1cb584e](https://github.com/YSL-RyuDo/CylinderGame/commit/1cb584e0032c653a1c14e1166f76505ddf6ae5f4)
 
 ### Library and sliding puzzles
 
 Implemented library seal-group interaction and answer checking, and a sliding-puzzle board/UI loaded from puzzle data. These are playable rule and interface systems, distinct from dialogue presentation. The linked revisions show the concrete puzzle scope rather than attributing every puzzle in the project to me.
 
-[LibraryPuzzlePanel.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/LibraryPuzzle/LibraryPuzzlePanel.cs), [My change 24497c4](https://github.com/YSL-RyuDo/Cylinder-1/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436), [SliderPuzzleManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/SliderPuzzleManager/SliderPuzzleManager.cs), [My change 24497c4](https://github.com/YSL-RyuDo/Cylinder-1/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436)
+[LibraryPuzzlePanel.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/LibraryPuzzle/LibraryPuzzlePanel.cs), [My change 24497c4](https://github.com/YSL-RyuDo/CylinderGame/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436), [SliderPuzzleManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/SliderPuzzleManager/SliderPuzzleManager.cs), [My change 24497c4](https://github.com/YSL-RyuDo/CylinderGame/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436)
 
 ## Contribution evidence
 
-[Dialogue rework / 대화 개편 / 会話改修](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
+[Dialogue rework / 대화 개편 / 会話改修](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
 
-[Emotion state / 감정 상태 / 感情状態](https://github.com/YSL-RyuDo/Cylinder-1/commit/719fe90233e191f8d4df5fe5b05bb0143525edcb)
+[Emotion state / 감정 상태 / 感情状態](https://github.com/YSL-RyuDo/CylinderGame/commit/719fe90233e191f8d4df5fe5b05bb0143525edcb)
 
-[Working branch / 작업 브랜치 / 作業ブランチ](https://github.com/YSL-RyuDo/Cylinder-1/tree/YSL)
+[Working branch / 작업 브랜치 / 作業ブランチ](https://github.com/YSL-RyuDo/CylinderGame/tree/YSL)
 
 ## Implementation and design
 
@@ -93,7 +93,7 @@ Hard-coded scene coroutines are direct but duplicate sequencing across events. A
 
 String commands and scene lookups can fail at runtime. In fade_wait, a missing FadeManager returns without scheduling the next node; that path needs an explicit continuation or error policy.
 
-[Cylinder-1/DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [Cylinder-1/DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs)
+[Cylinder-1/DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [Cylinder-1/DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs)
 
 ### Earlier version: JSON dialogue loading
 
@@ -113,7 +113,7 @@ Hard-coded dialogue needs little tooling but scatters content changes through co
 
 String IDs and resource names form a data contract that needs validation. Character-by-character concatenation also allocates strings, so the display path has costs beyond loading the dialogue file.
 
-[Cylinder-1/DialogueLoader.cs](https://github.com/YSL-RyuDo/Cylinder-1/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueLoader.cs), [Cylinder-1/DialogueManager.cs](https://github.com/YSL-RyuDo/Cylinder-1/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueManager.cs)
+[Cylinder-1/DialogueLoader.cs](https://github.com/YSL-RyuDo/CylinderGame/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueLoader.cs), [Cylinder-1/DialogueManager.cs](https://github.com/YSL-RyuDo/CylinderGame/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueManager.cs)
 
 ## Open and inspect
 
@@ -127,4 +127,4 @@ Inspect the YSL branch's scenes and Build Settings; this overview does not presc
 
 ## Related repositories
 
-[Cylinder-1](https://github.com/YSL-RyuDo/Cylinder-1), Public repository
+[Cylinder](https://github.com/YSL-RyuDo/CylinderGame), Public repository

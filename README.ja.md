@@ -29,39 +29,39 @@ YSLブランチでCSV会話と選択肢、コマンド実行、インベント�
 
 選択肢、条件、フラグ、システム命令を扱う会話ノード実行器を実装・拡張しました。CSV読込で内容と実行を分け、DialogueUIが文字送り・立ち絵・選択肢を表示します。
 
-[DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [担当変更 f2bade0](https://github.com/YSL-RyuDo/Cylinder-1/commit/f2bade0f41e38fe1d6b07cd38d9aff677152782d), [DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
+[DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [担当変更 f2bade0](https://github.com/YSL-RyuDo/CylinderGame/commit/f2bade0f41e38fe1d6b07cd38d9aff677152782d), [DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
 
 ### インベントリと登録アイテム
 
 アイテム定義・取得・除去・登録・使用とインベントリUIを担当しました。登録アイテムをポータル解放などで使い、メニュー選択と進行をつなぎました。
 
-[InventoryManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Item/InventoryManager.cs), [担当変更 6ed8ded](https://github.com/YSL-RyuDo/Cylinder-1/commit/6ed8ded8f321ed7da22453f874316442aa2da7d3), [InventoryUI.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/InventoryUI.cs), [担当変更 b21ce48](https://github.com/YSL-RyuDo/Cylinder-1/commit/b21ce4867f5cff4459ed22a8f97ef87d1c70e54c)
+[InventoryManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Item/InventoryManager.cs), [担当変更 6ed8ded](https://github.com/YSL-RyuDo/CylinderGame/commit/6ed8ded8f321ed7da22453f874316442aa2da7d3), [InventoryUI.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/InventoryUI.cs), [担当変更 b21ce48](https://github.com/YSL-RyuDo/CylinderGame/commit/b21ce4867f5cff4459ed22a8f97ef87d1c70e54c)
 
 ### ポータル、フェードとカメラ遷移
 
 フェードとワープを連携するポータル移動、アイテム条件と即時の往復を防ぐ準備状態を実装しました。カメラ追従と外部制御の切替も担当し、部屋やパズルが一時的に視点を制御できます。
 
-[PortalTrigger.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Portal/PortalTrigger.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [CameraFollow.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Map/CameraFollow.cs), [担当変更 b5e01aa](https://github.com/YSL-RyuDo/Cylinder-1/commit/b5e01aa3498a702fa05e44b18782b3c70da0042a)
+[PortalTrigger.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Portal/PortalTrigger.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [CameraFollow.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Map/CameraFollow.cs), [担当変更 b5e01aa](https://github.com/YSL-RyuDo/CylinderGame/commit/b5e01aa3498a702fa05e44b18782b3c70da0042a)
 
 ### 操作対象とウィンドウ制御
 
 プレイヤー操作対象・案内表示とIUIWindowベースのメニュー制御を担当しました。メニューでゲーム時間を停止し、閉じると戻します。人格選択、独白、ナレーションも別の表示処理として実装しました。
 
-[UIManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/UIManager.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PersonalityUI.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/PersonalityUI/PersonalityUI.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PlayerInteraction.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Player/PlayerInteraction.cs), [担当変更 1cb584e](https://github.com/YSL-RyuDo/Cylinder-1/commit/1cb584e0032c653a1c14e1166f76505ddf6ae5f4)
+[UIManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/UIManager.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PersonalityUI.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/UI/PersonalityUI/PersonalityUI.cs), [担当変更 89a3080](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5), [PlayerInteraction.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Player/PlayerInteraction.cs), [担当変更 1cb584e](https://github.com/YSL-RyuDo/CylinderGame/commit/1cb584e0032c653a1c14e1166f76505ddf6ae5f4)
 
 ### 図書館とスライドパズル
 
 図書館の封印グループ操作・正解判定と、データから構成するスライド盤面・UIを実装しました。会話表示とは別のプレイルールと操作画面です。
 
-[LibraryPuzzlePanel.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/LibraryPuzzle/LibraryPuzzlePanel.cs), [担当変更 24497c4](https://github.com/YSL-RyuDo/Cylinder-1/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436), [SliderPuzzleManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/SliderPuzzleManager/SliderPuzzleManager.cs), [担当変更 24497c4](https://github.com/YSL-RyuDo/Cylinder-1/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436)
+[LibraryPuzzlePanel.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/LibraryPuzzle/LibraryPuzzlePanel.cs), [担当変更 24497c4](https://github.com/YSL-RyuDo/CylinderGame/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436), [SliderPuzzleManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Puzzle/SliderPuzzleManager/SliderPuzzleManager.cs), [担当変更 24497c4](https://github.com/YSL-RyuDo/CylinderGame/commit/24497c4aed3f61d3eafcdef1937fcc29ddaae436)
 
 ## 貢献の根拠
 
-[Dialogue rework / 대화 개편 / 会話改修](https://github.com/YSL-RyuDo/Cylinder-1/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
+[Dialogue rework / 대화 개편 / 会話改修](https://github.com/YSL-RyuDo/CylinderGame/commit/89a3080fa996dd7b30180d51d87a1db21f7e3ec5)
 
-[Emotion state / 감정 상태 / 感情状態](https://github.com/YSL-RyuDo/Cylinder-1/commit/719fe90233e191f8d4df5fe5b05bb0143525edcb)
+[Emotion state / 감정 상태 / 感情状態](https://github.com/YSL-RyuDo/CylinderGame/commit/719fe90233e191f8d4df5fe5b05bb0143525edcb)
 
-[Working branch / 작업 브랜치 / 作業ブランチ](https://github.com/YSL-RyuDo/Cylinder-1/tree/YSL)
+[Working branch / 작업 브랜치 / 作業ブランチ](https://github.com/YSL-RyuDo/CylinderGame/tree/YSL)
 
 外部素材・チームメンバーの貢献は区別します。
 
@@ -95,7 +95,7 @@ YSLのDialogueManagerはデータノードとシステム命令を実行しま�
 
 文字列コマンドとシーン検索は実行時に失敗し得ます。fade_waitでFadeManagerがないと次ノードを予約せず戻るため、継続またはエラー処理の規則が必要です。
 
-[Cylinder-1/DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [Cylinder-1/DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/Cylinder-1/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs)
+[Cylinder-1/DialogueManager.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueManager.cs), [Cylinder-1/DialogueCSVLoader.cs (YSL)](https://github.com/YSL-RyuDo/CylinderGame/blob/b5de69a235c4548e93b4dc8438efea1701fa5d63/Assets/Scripts/YSL/Dialogue/DialogueCSVLoader.cs)
 
 ### 初期版のJSON会話読込
 
@@ -115,7 +115,7 @@ DialogueLoaderはJSON台詞を読み、IDで検索できるデータにします
 
 文字列IDとリソース名の規則をデータ契約として検証する必要があります。文字単位の連結は文字列を割り当てるため、読込とは別に表示経路のコストも考慮します。
 
-[Cylinder-1/DialogueLoader.cs](https://github.com/YSL-RyuDo/Cylinder-1/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueLoader.cs), [Cylinder-1/DialogueManager.cs](https://github.com/YSL-RyuDo/Cylinder-1/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueManager.cs)
+[Cylinder-1/DialogueLoader.cs](https://github.com/YSL-RyuDo/CylinderGame/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueLoader.cs), [Cylinder-1/DialogueManager.cs](https://github.com/YSL-RyuDo/CylinderGame/blob/e6b28c873b11bd9daa1421780e0608a057b40cb4/Assets/Scripts/YSL/Dialogue/DialogueManager.cs)
 
 ## 実行・コードの確認
 
@@ -129,4 +129,4 @@ YSLブランチのシーンとBuild Settingsを確認してください。未確
 
 ## 関連リポジトリ
 
-[Cylinder-1](https://github.com/YSL-RyuDo/Cylinder-1), 公開リポジトリ
+[Cylinder](https://github.com/YSL-RyuDo/CylinderGame), 公開リポジトリ
